@@ -1,8 +1,10 @@
 /** @type {import('next').NextConfig} */
-const next_config = {
-    images: {
-        domains: ['images.unsplash.com', 'svgur.com'],
-    },
+const nextConfig = {
+  output: 'export', // تفعيل التصدير الثابت
+  images: {
+    unoptimized: true, // ضروري لـ Static Export
+    domains: ['images.unsplash.com', 'svgur.com'],
+  },
 };
 
-export default next_config;
+export default nextConfig;
